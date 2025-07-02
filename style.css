@@ -1,0 +1,731 @@
+/* =============================
+   Global Styles
+   ============================= */
+
+body {
+    background-color: #f5de82;
+    color: #330000;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =============================
+   Header
+   ============================= */
+
+header {
+    background-color: #ccaa66;
+    color: #330000;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    /* Ensures it stays above other elements */
+}
+
+
+/* =============================
+   Navigation Bar
+   ============================= */
+
+nav {
+    background-color: #E8D882;
+    padding-top: 20px;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Adjust Navigation Bar Buttons */
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+nav li {
+    margin-bottom: 25px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #330000;
+    display: block;
+    padding: 10px 20px;
+    background-color: #E8D882;
+    border: 2px solid #330000;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ccaa66;
+    transform: translateY(3px);
+}
+
+
+/* =============================
+   Main Content
+   ============================= */
+
+main {
+    flex-grow: 1;
+    margin-left: 180px;
+    /* Adjusted to match navbar width */
+    margin-top: 120px;
+    /* Ensures content does not overlap header */
+    padding: 20px;
+    background-color: #e6e6b9;
+    min-height: calc(100vh - 140px);
+    /* Adjusted to account for header and footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* =============================
+   Menu Section (Updated to Grid)
+   ============================= */
+
+#menu {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+#menu h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #330000;
+    margin-bottom: 20px;
+    /* Added spacing */
+}
+
+
+/* Grid Layout for Menu Items */
+
+#menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Set to exactly 4 columns */
+    gap: 70px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+#menu li {
+    background: #f3e593;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu li:hover {
+    transform: scale(1.05);
+}
+
+
+/* Image Styling */
+
+#menu img {
+    width: 180px;
+    height: 150px;
+    border-radius: 60%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* Product Name and Price Styling */
+
+#menu h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    /* Reduced spacing */
+    color: #330000;
+}
+
+#menu .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+    /* Added margin for spacing */
+}
+
+
+/* =============================
+   Home Section (Updated)
+   ============================= */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 60px 40px;
+    min-height: 60vh;
+    /* Ensures it takes up a good portion of the viewport */
+    gap: 50px;
+    /* Space between text and image */
+    position: relative;
+    /* Change to 'absolute' if needed */
+    z-index: 10;
+    /* Ensure it appears above other elements */
+    top: 24px;
+    /* Adjust this value to create space from the header */
+    background-color: #ffffcc;
+    /* Matches the overall theme */
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+}
+
+
+/* Moves text slightly left */
+
+#home article {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+/* Adjusts the address for better positioning */
+
+#home #home-address {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* Home Section Image - Adjusted slightly higher */
+
+#home-image {
+    position: absolute;
+    right: 6%;
+    top: 45%;
+    /* Moves the image slightly higher */
+    transform: translateY(-50%);
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Fix */
+
+@media (max-width: 1024px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    #home article {
+        max-width: 100%;
+        padding-left: 0;
+    }
+    #home-image {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+
+/* Button Styling */
+
+.order-button {
+    display: inline-block;
+    /* Make it behave like a button */
+    background-color: #E8D882;
+    color: #330000;
+    border: 2px solid #330000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    text-decoration: none;
+    /* Remove underline */
+    text-align: center;
+    /* Center text */
+}
+
+.order-button:hover {
+    background-color: #ccaa66;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+/* =============================
+   Video Section
+   ============================= */
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers content vertically */
+    align-items: center;
+    /* Centers content horizontally */
+    background-color: #ffffcc;
+    /* Matches the home section */
+    padding: 60px 40px;
+    /* Match the padding of the home section */
+    text-align: center;
+    /* Centers text within the container */
+    margin: 100px auto;
+    /* Center the section and add top margin */
+    width: 95%;
+    /* Increased width to make it wider */
+    max-width: 1200px;
+    /* Increased max-width for a wider layout */
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+}
+
+#video-container h2 {
+    font-size: 30px;
+    /* Increase font size for the header */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+#video-container p {
+    font-size: 18px;
+    /* Increase font size for the description */
+    margin-bottom: 20px;
+    /* Keeps spacing balanced */
+}
+
+#video-container video {
+    width: 90%;
+    /* Responsive width */
+    max-width: 700px;
+    /* Maximum width for the video */
+    border-radius: 20px;
+    /* Optional: Keep this for video styling */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =============================
+   Buttons & Interactions
+   ============================= */
+
+button,
+#home button {
+    background-color: #E8D882;
+    color: #330000;
+    border: 2px solid #330000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover,
+#home button:hover {
+    background-color: #ccaa66;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+/* =============================
+   Music Section
+   ============================= */
+
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+/* Category styling */
+
+.music-category {
+    background-color: #E8D882;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/* Music container with a strict 3-column layout */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row */
+    column-gap: 30px;
+    /* space between columns */
+    row-gap: 60px;
+    /* increased space between rows */
+    justify-items: center;
+    width: 110%;
+    max-width: 1000px;
+    height: 390px;
+}
+
+
+/* Individual music item */
+
+.music-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Headers */
+
+#music h2 {
+    margin-bottom: 40px;
+}
+
+#music h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* Music images */
+
+#music img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+#music img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Music text */
+
+.music-item p {
+    font-size: 16px;
+    color: #330000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#music img,
+.menu-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Audio player styling */
+
+audio {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .music-grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 per row on small screens */
+    }
+}
+
+
+/* =============================
+   Footer
+   ============================= */
+
+footer {
+    background-color: #ccaa66;
+    color: #330000;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    border-top: 2px solid black;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 80px;
+    /* Make the footer fixed */
+    bottom: 0;
+    /* Position it at the bottom */
+    left: 0;
+    /* Align it to the left */
+    z-index: 30;
+    /* Ensure it stays above other elements */
+}
+
+
+/* =============================
+   Responsive Design
+   ============================= */
+
+@media (max-width: 768px) {
+    #home {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    #home .content {
+        max-width: 100%;
+    }
+    #home img {
+        margin-top: 10px;
+        width: 80%;
+        max-width: 400px;
+    }
+    main {
+        margin-left: 0;
+        padding-top: 140px;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        padding: 10px 0;
+    }
+    nav li {
+        margin: 0 15px;
+    }
+}
+
+.menu-item {
+    background: lightyellow;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    /* Adjust width */
+    margin: auto;
+}
+
+.menu-item img {
+    width: 50px;
+    /* Adjust size */
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+.menu-section p {
+    font-size: 16px;
+}
+
+#floats {
+    text-align: center;
+    /* Center text within the section */
+}
+
+
+/* =============================
+   Jobs Section (Compact & Aligned)
+   ============================= */
+
+#jobs {
+    display: none;
+    /* Make sure to set this to 'block' or 'flex' when you want to show it */
+    padding: 30px 4%;
+    background-color: #ffffcc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    /* or 'absolute' if you want it to float above other elements */
+    z-index: 10;
+    /* Ensure it appears above other elements */
+    top: 30px;
+    /* Adjust this value to create space from the header */
+}
+
+
+/* Section Title */
+
+#jobs h2 {
+    color: #330000;
+    text-align: center;
+    font-size: 26px;
+    /* Slightly smaller */
+    margin-bottom: 20px;
+}
+
+
+/* Job Listings Container */
+
+#jobs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* ✅ Stretch items to equal height */
+}
+
+
+/* Job Cards */
+
+.job-listing {
+    width: 260px;
+    background: #E8D882;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    flex-grow: 1;
+    /* ✅ Flex column layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Ensure height consistency */
+}
+
+.job-image {
+    width: 100%;
+    height: 140px;
+    /* Reduced from 180px */
+    overflow: hidden;
+    border-radius: 6px;
+    /* Slightly smaller corners */
+    margin-bottom: 6px;
+    /* Less space below image */
+}
+
+.job-image img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+
+
+/* Job Details */
+
+.job-details {
+    text-align: center;
+    font-size: 12px;
+    /* Smaller text */
+    line-height: 1.3;
+    /* Tighter spacing between lines */
+    margin-top: 8px;
+    /* Small margin for spacing */
+}
+
+
+/* Apply Button */
+
+#jobs button {
+    display: block;
+    margin: 12px auto;
+    background-color: #ccaa66;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 160px;
+    /* Smaller button */
+    height: 40px;
+}
+
+#jobs button:hover {
+    background-color: #b89459;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+    #jobs-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .job-listing {
+        width: 100%;
+        max-width: 350px;
+    }
+}

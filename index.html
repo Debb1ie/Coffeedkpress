@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dkpress's Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dkpress Coffee Shop</h1>
+        <p>Experience the best coffee in town</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#" onclick="showSection('home', event)">Home</a></li>
+            <li><a href="#" onclick="showSection('menu', event)">Menu</a></li>
+            <li><a href="#" onclick="showSection('music', event)">Music</a></li>
+            <li><a href="#" onclick="showSection('jobs', event)">Jobs</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <article>
+                <h2>Welcome to Dkpress Coffee Shop!</h2>
+                <p>Come in and experience a cozy atmosphere with our delightful selection of coffee and pastries.</p>
+                <ul>
+                    <li>Specialty Coffee and Tea</li>
+                    <li>Freshly made sandwiches</li>
+                    <li>Bagels, Muffins, and Organic Snacks</li>
+                    <li>Live Music & Poetry Readings</li>
+                    <li>Open mic nights</li>
+                </ul>
+                <p id="home-address">
+                    Block 140<br> Lot 6 Maharlika Rd, Taguig City<br> Mobile Number: 09669982765
+                </p>
+                <a href="https://www.facebook.com/profile.php?id=100095711465844" target="_blank" class="order-button">Order Now</a>
+            </article>
+            <aside>
+                <img src="dk.jpg" alt="Dkpress Coffee" id="home-image">
+            </aside>
+        </section>
+
+        <section id="video-container">
+            <div class="video-content">
+                <h2>Advertisement</h2>
+                <p>Watch our latest promotional video and discover what makes Dkpress Coffee Shop special!</p>
+                <video controls>
+                    <source src="0330.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <section id="iced-coffee">
+                <h3>Iced Coffee</h3>
+                <ul>
+                    <li>
+                        <img src="americano.jpg" alt="Americano">
+                        <p>Americano</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="cha phe sua da.jpg" alt="Ca Phe Sua Da">
+                        <p>Ca Phe Sua Da</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 130</p>
+                    </li>
+                    <li>
+                        <img src="macchiato.jpg" alt="Macchiato">
+                        <p>Macchiato</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="mocha.jpg" alt="Mocha">
+                        <p>Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="white mocha.jpg" alt="White Mocha">
+                        <p>White Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="spanish latte.jpg" alt="Spanish Latte">
+                        <p>Spanish Latte</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="salted cream latte.jpg" alt="Salted Cream Latte">
+                        <p>Salted Cream Latte</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="caramel macchiato.jpg" alt="Caramel Macchiato">
+                        <p>Caramel Macchiato</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="ca phe trung.jpg" alt="Ca Phe Trung">
+                        <p>Ca Phe Trung</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 130</p>
+                    </li>
+                    <li>
+                        <img src="mocha trung.jpg" alt="Mocha Trung">
+                        <p>Mocha Trung</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                    <li>
+                        <img src="tiramisu latte.jpg" alt="Tiramisu Latte">
+                        <p>Tiramisu Latte</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 150</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="iced-blended">
+                <h3>Iced Blended</h3>
+                <ul>
+                    <li>
+                        <img src="mocha ib.jpg" alt="Mocha">
+                        <p>Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="matcha ib.jpg" alt="Matcha">
+                        <p>Matcha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="java chip ib.jpg" alt="Java Chip">
+                        <p>Java Chip</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="dark chocolate cream.jpg" alt="Dark Chocolate Cream">
+                        <p>Dark Chocolate Cream</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="white mocha ib.jpg" alt="White Mocha">
+                        <p>White Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="kape sua da ib.jpg" alt="Ca Phe Sua Da">
+                        <p>Ca Phe Sua Da</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="spanish latte ib.jpg" alt="Spanish Latte">
+                        <p>Spanish Latte</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="vanilla bean latte ib.jpg" alt="Vanilla Bean Latte">
+                        <p>Vanilla Bean Latte</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="caramel macchiato ib.jpg" alt="Caramel Macchiato">
+                        <p>Caramel Macchiato</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="ube cream.jpg" alt="Ube Cream Milkshake">
+                        <p>Ube Cream Milkshake</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                    <li>
+                        <img src="vanilla cream.jpg" alt="Vanilla Cream Milkshake">
+                        <p>Vanilla Cream Milkshake</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 180</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="hot-coffee">
+                <h3>Hot Coffee</h3>
+                <ul>
+                    <li>
+                        <img src="kape suada.jpg" alt="Ca Phe Sua Da">
+                        <p>Ca Phe Sua Da</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="kape thrung.jpg" alt="Ca Phe Trung">
+                        <p>Ca Phe Trung</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 140</p>
+                    </li>
+                    <li>
+                        <img src="moka thrung.jpg" alt="Mocha Trung">
+                        <p>Mocha Trung</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 140</p>
+                    </li>
+                    <li>
+                        <img src="americano hot.jpg" alt="Americano">
+                        <p>Americano</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 100</p>
+                    </li>
+                    <li>
+                        <img src="spanish latte hot.jpg" alt="Spanish Latte">
+                        <p>Spanish Latte</p>
+                        <p>Short: 120</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="macchiato hot.jpg" alt="Macchiato">
+                        <p>Macchiato</p>
+                        <p>Short: 120</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="caramel macchiato.jpg" alt="Caramel Macchiato">
+                        <p>Caramel Macchiato</p>
+                        <p>Short: 120</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="mocha hot.jpg" alt="Mocha">
+                        <p>Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 140</p>
+                    </li>
+                    <li>
+                        <img src="wmocha.jpg" alt="White Mocha">
+                        <p>White Mocha</p>
+                        <p>Short: 130</p>
+                        <p>Tall: 140</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="non-coffee">
+                <h3>Non-Coffee</h3>
+                <ul>
+                    <li>
+                        <img src="hot matcha.jpg" alt="Hot Matcha">
+                        <p>Hot Matcha</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="iced matcha.jpg" alt="Iced Matcha">
+                        <p>Iced Matcha</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="hot chocolate.jpg" alt="Hot Chocolate">
+                        <p>Hot Chocolate</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="iced chocolate.jpg" alt="Iced Chocolate">
+                        <p>Iced Chocolate</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="salted cream iced chocolates.jpg" alt="Salted Cream Iced Chocolate">
+                        <p>Salted Cream Iced Chocolate</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="floats">
+                <h3>Floats</h3>
+                <ul>
+                    <li>
+                        <img src="matcha float.jpg" alt="Matcha Float">
+                        <p>Matcha Float</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="coffee float.jpg" alt="Coffee Float">
+                        <p>Coffee Float</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="ube float.jpg" alt="Ube Float">
+                        <p>Ube Float</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                    <li>
+                        <img src="mangofloat.jpg" alt="Mango Float">
+                        <p>Mango Float</p>
+                        <p>Short: 100</p>
+                        <p>Tall: 120</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="dkane">
+                <h3>D'Kane</h3>
+                <ul>
+                    <li>
+                        <img src="sugarcane.jpg" alt="Sugarcane">
+                        <p>Sugarcane</p>
+                        <p>100</p>
+                    </li>
+                    <li>
+                        <img src="sugarcane with calamansi.jpg" alt="Sugarcane with Calamansi">
+                        <p>Sugarcane with Calamansi</p>
+                        <p>110</p>
+                    </li>
+                    <li>
+                        <img src="sugarcane with lemon.jpg" alt="Sugarcane with Lemon">
+                        <p>Sugarcane with Lemon</p>
+                        <p>110</p>
+                    </li>
+                    <li>
+                        <img src="sugarcane with yakult.jpg" alt="Sugarcane with Yakult">
+                        <p>Sugarcane with Yakult</p>
+                        <p>120</p>
+                    </li>
+                    <li>
+                        <img src="sugarcane with yakult calamansi.jpg" alt="Sugarcane with Yakult Calamansi">
+                        <p>Sugarcane with Yakult Calamansi</p>
+                        <p>130</p>
+                    </li>
+                    <li>
+                        <img src="sugarcane with yakult lemon.jpg" alt="Sugarcane with Yakult Lemon">
+                        <p>Sugarcane with Yakult Lemon</p>
+                        <p>130</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="food">
+                <h3>Food</h3>
+                <ul>
+                    <li>
+                        <img src="tuna creamy carbonara.jpg" alt="Tuna Creamy Carbonara">
+                        <p>Tuna Creamy Carbonara</p>
+                        <p>170</p>
+                    </li>
+                    <li>
+                        <img src="tuna pesto.jpg" alt="Tuna Pesto">
+                        <p>Tuna Pesto</p>
+                        <p>170</p>
+                    </li>
+                    <li>
+                        <img src="baked nachos.jpg" alt="Baked Nachos">
+                        <p>Baked Nachos</p>
+                        <p>150</p>
+                    </li>
+                    <li>
+                        <img src="beef taco.jpg" alt="Beef Taco Breadsticks">
+                        <p>Beef Taco Breadsticks</p>
+                        <p>130</p>
+                    </li>
+                    <li>
+                        <img src="corndog.jpg" alt="Korean Cheese Corndog">
+                        <p>Korean Cheese Corndog</p>
+                        <p>120</p>
+                    </li>
+                    <li>
+                        <img src="beef and mushroom.jpg" alt="Beef and Mushroom Turnover">
+                        <p>Beef and Mushroom Turnover</p>
+                        <p>140</p>
+                    </li>
+                    <li>
+                        <img src="thin crust pizza.jpg" alt="Thin Crust Pizza">
+                        <p>Thin Crust Pizza</p>
+                        <p>170</p>
+                        <p>(Hawaiian, Pepperoni, Bacon & Mushroom, Spinach w/ Cream Cheese)</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="desserts">
+                <h3>Desserts</h3>
+                <ul>
+                    <li>
+                        <img src="moist cupcake.jpg" alt="Moist Chocolate Cupcake">
+                        <p>Moist Chocolate Cupcake</p>
+                        <p>120</p>
+                    </li>
+                    <li>
+                        <img src="red velvet.jpg" alt="Red Velvet Cupcake">
+                        <p>Red Velvet Cupcake</p>
+                        <p>120</p>
+                    </li>
+                    <li>
+                        <img src="banana cupcake.jpg" alt="Banana Cupcake with Cream Cheese">
+                        <p>Banana Cupcake with Cream Cheese</p>
+                        <p>120</p>
+                    </li>
+                    <li>
+                        <img src="salted cream.jpg" alt="Salted Cream Cheesecake">
+                        <p>Salted Cream Cheesecake</p>
+                        <p>150</p>
+                    </li>
+                    <li>
+                        <img src="blueberry.jpg" alt="Blueberry Cheesecake">
+                        <p>Blueberry Cheesecake</p>
+                        <p>150</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="addons">
+                <h3>Add-ons</h3>
+                <ul>
+                    <li>Coffee Shot - 20</li>
+                    <li>Milk - 20</li>
+                    <li>Chia Seeds - 20</li>
+                    <li>Almond Milk - 30</li>
+                    <li>Coffee Jelly - 20</li>
+                    <li>Syrup Shot - 20</li>
+                    <li>Sea Salt - 20</li>
+                </ul>
+            </section>
+        </section>
+
+
+        <section id="music">
+            <h2>Live Music</h2>
+
+            <h3>Morning Music</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="lauv.png" alt="Music Icon 1" class="music-square" onclick="playMusic('music1')">
+                    <p>I Like Me Better</p>
+                    <audio id="music1" src="ilikemebetter.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="bluee.png" alt="Music Icon 2" class="music-square" onclick="playMusic('music2')">
+                    <p>Blue</p>
+                    <audio id="music2" src="blue.m4a" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="summertime.png" alt="Music Icon 3" class="music-square" onclick="playMusic('music3')">
+                    <p>Every Summertime</p>
+                    <audio id="music3" src="summer (1).mp3" controls></audio>
+                </div>
+            </div>
+
+            <h3>Relaxing & Cozy Music</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="getU.png" alt="Music Icon 4" class="music-square" onclick="playMusic('music4')">
+                    <p>Get You</p>
+                    <audio id="music4" src="get you.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="bestpart.png" alt="Music Icon 5" class="music-square" onclick="playMusic('music5')">
+                    <p>Best Part</p>
+                    <audio id="music5" src="best part.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="ridleys.png" alt="Music Icon 6" class="music-square" onclick="playMusic('music6')">
+                    <p>Aphrodite</p>
+                    <audio id="music6" src="aphrodite.mp3" controls></audio>
+                </div>
+            </div>
+
+            <h3>Joyful Music</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="MkUmine.png" alt="Music Icon 7" class="music-square" onclick="playMusic('music7')">
+                    <p>Make You Mine</p>
+                    <audio id="music7" src="makeumine.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="oursong2.png" alt="Music Icon 8" class="music-square" onclick="playMusic('music8')">
+                    <p>Our Song</p>
+                    <audio id="music8" src="oursong.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="hooks.png" alt="Music Icon 9" class="music-square" onclick="playMusic('music9')">
+                    <p>Line Without a Hook</p>
+                    <audio id="music9" src="hook.mp3" controls></audio>
+                </div>
+            </div>
+
+            <h3>Chill Vibes</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="start.png" alt="Music Icon 10" class="music-square" onclick="playMusic('music10')">
+                    <p>From the Start</p>
+                    <audio id="music10" src="fromthestart.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="val.png" alt="Music Icon 11" class="music-square" onclick="playMusic('music11')">
+                    <p>Valentine</p>
+                    <audio id="music11" src="valentine.m4a" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="break.png" alt="Music Icon 12" class="music-square" onclick="playMusic('music12')">
+                    <p>Break My Heart</p>
+                    <audio id="music12" src="breakmyheart.m4a" controls></audio>
+                </div>
+            </div>
+
+            <h3>Night Time Melodies</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <img src="why.png" alt="Music Icon 13" class="music-square" onclick="playMusic('music13')">
+                    <p>8 Letters</p>
+                    <audio id="music13" src="whydontwe.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="pleasee.png" alt="Music Icon 14" class="music-square" onclick="playMusic('music14')">
+                    <p>Please</p>
+                    <audio id="music14" src="please.mp3" controls></audio>
+                </div>
+                <div class="music-item">
+                    <img src="wedont.png" alt="Music Icon 15" class="music-square" onclick="playMusic('music15')">
+                    <p>We Don't Talk Anymore</p>
+                    <audio id="music15" src="wedontalk (1).mp3" controls></audio>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function togglePlayPause(audioId, buttonId) {
+                const audio = document.getElementById(audioId);
+                const button = document.getElementById(buttonId);
+
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = "Pause";
+                } else {
+                    audio.pause();
+                    button.textContent = "Play";
+                }
+            }
+        </script>
+        </section>
+
+        <section id="jobs">
+            <h2>☕ Join Our Team ☕</h2>
+            <p>We are hiring! If you're passionate about coffee and customer service, we'd love to meet you.</p>
+
+            <div id="jobs-container">
+                <article class="job-listing">
+                    <div class="job-image">
+                        <img src="barista.png" alt="Image of a Barista preparing coffee">
+                    </div>
+                    <div class="job-details">
+                        <h3>☕ Barista</h3>
+                        <p><strong>Responsibilities:</strong> Prepare high-quality coffee, engage with customers, and maintain cleanliness.</p>
+                        <p><strong>Requirements:</strong> Experience preferred and must be friendly and a fast learner.</p>
+                        <button onclick="applyJob('Barista')">Apply Now</button>
+                    </div>
+                </article>
+
+                <article class="job-listing">
+                    <div class="job-image">
+                        <img src="chef.webp" alt="Image of a Pastry Chef baking">
+                    </div>
+                    <div class="job-details">
+                        <h3>🍰 Pastry Chef</h3>
+                        <p><strong>Responsibilities:</strong> Bake and present pastries, collaborate with the team, and create new recipes.</p>
+                        <p><strong>Requirements:</strong> Baking experience required and has passion for food.</p>
+                        <button onclick="applyJob('Pastry Chef')">Apply Now</button>
+                    </div>
+                </article>
+
+                <article class="job-listing">
+                    <div class="job-image">
+                        <img src="cashier.jpg" alt="Image of a Cashier handling transactions">
+                    </div>
+                    <div class="job-details">
+                        <h3>👨‍💼 Cashier</h3>
+                        <p><strong>Responsibilities:</strong> Handle transactions, manage cash flow, and provide excellent customer service.</p>
+                        <p><strong>Requirements:</strong> Good communication skills, basic math, and a friendly attitude.</p>
+                        <button onclick="applyJob('Cashier')">Apply Now</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <script>
+            function applyJob(position) {
+                const email = "DkpressTaguig@gmail.com";
+                const message = `To apply for the ${position} position, please send your CV to: ${email} or check out our Facebook page.`;
+                alert(message);
+            }
+        </script>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dkpress Coffee Shop</p>
+        <p class="email-info">Email: <a href="mailto:DkpressTaguig@gmail.com">DkpressTaguig@gmail.com</a></p>
+    </footer>
+
+
+    <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection("home"); // Show "Home" section by default
+        });
+
+        function showSection(section, event) {
+            if (event) event.preventDefault(); // Prevent default link behavior
+
+            // Hide all sections
+            document.querySelectorAll("main section").forEach(s => {
+                s.style.display = "none";
+            });
+
+            // Show the selected section
+            let selectedSection = document.getElementById(section);
+            if (selectedSection) {
+                selectedSection.style.display = "block";
+            }
+
+            // Ensure the Menu sections are displayed properly
+            if (section === "menu") {
+                document.querySelectorAll("#menu > section").forEach(s => {
+                    s.style.display = "block";
+                });
+            }
+
+            // Show video container only on "Home" section
+            let videoContainer = document.getElementById("video-container");
+            if (videoContainer) {
+                videoContainer.style.display = (section === "home") ? "block" : "none";
+            }
+
+            // Update active navigation link
+            updateActiveNav(section);
+        }
+
+        function updateActiveNav(section) {
+            document.querySelectorAll("nav ul li a").forEach(link => {
+                link.classList.remove("active");
+
+                // Ensure the correct link is marked active
+                let onclickAttr = link.getAttribute("onclick");
+                if (onclickAttr && onclickAttr.includes(section)) {
+                    link.classList.add("active");
+                }
+            });
+        }
+
+        function playMusic(audioId) {
+            let music = document.getElementById(audioId);
+
+            if (!music) return; // Exit if the audio element is not found
+
+            // Pause all other audio elements before playing the selected one
+            document.querySelectorAll("audio").forEach(audio => {
+                if (audio.id !== audioId) {
+                    audio.pause();
+                    audio.currentTime = 0; // Reset other tracks
+                }
+            });
+
+            // Toggle play/pause for the selected track
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
